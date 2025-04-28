@@ -1,0 +1,23 @@
+bagpack-drive/
+│
+├── client/                 # Frontend 
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── BackpackUI.jsx    # Main drag-and-drop UI
+│   │   │   ├── Login.jsx         # Username/password screen
+│   │   │   └── FileList.jsx      # File listing component
+│   │   ├── App.jsx
+│   │   └── index.jsx
+│   └── public/
+│       └── assets/
+│           └── backpack-image.png
+│
+├── server/                 # Backend
+│   ├── routes/
+│   │   ├── auth.js           # Auth endpoints
+│   │   ├── files.js          # File endpoints
+│   ├── services/
+│   │   └── driveService.js   # Google Drive integration
+│   ├── config/
+│   │   └── service.json      # Google Service Account creds
+│   └── index.js              # Server entry point
